@@ -15,6 +15,9 @@ public class EmployeeService {
 	@Value("${employee.name}")
 	 String name;
 	
+	@Value("${key.name}")
+	 String key;
+	
 	public Employee getEmployeeDetails() {
 		Employee emp = new Employee();
 		emp.setName(name);
@@ -22,6 +25,7 @@ public class EmployeeService {
 		emp.setEmpId("1");
 		emp.setSalary(3000);
 		emp.setMessage(message);
+		emp.setKey(key);
 		return emp;
 		
 	}

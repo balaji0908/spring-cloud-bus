@@ -6,7 +6,16 @@ public class Employee {
 	private String designation;
 	private double salary;
 	private String message;
+	private String key;
 	
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
+	}
+
 	public String getMessage() {
 		return message;
 	}
